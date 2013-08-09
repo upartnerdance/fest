@@ -1,0 +1,12 @@
+name: 'Star of the North'
+markdown: rdiscount
+stylus:
+  compress: true
+  path: ./css
+  use: nib
+permalink: pretty
+exclude: [
+  node_modules,
+  'star.sublime-project',
+  'star.sublime-workspace'
+]
