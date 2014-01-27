@@ -1,4 +1,4 @@
-name: 'Star of the North'
+name: 'Dance Fest'
 markdown: rdiscount
 stylus:
   compress: true
@@ -7,6 +7,6 @@ stylus:
 permalink: pretty
 exclude: [
   node_modules,
-  'star.sublime-project',
-  'star.sublime-workspace'
+  'project.sublime-project',
+  'project.sublime-workspace'
 ]

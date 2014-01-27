@@ -5,7 +5,8 @@
 TERTIARY = #2A6DB2
 
 // PRIMARY = darken(#CC0000, 20%)
-PRIMARY = darken(spin(saturate(#c5332d, 40%), -8%), 12%)
+// PRIMARY = darken(spin(saturate(#c5332d, 40%), -8%), 12%)
+PRIMARY = #BF0224
 SECONDARY = #8A0023
 // TERTIARY = #c5332d
 // TERTIARY = #D9003B
@@ -56,13 +57,17 @@ html, body
 
 // nav
 .navbar
-  box-shadow 0 1px 2px rgba(black, .4)
-  background PRIMARY
+  // box-shadow 0 1px 2px rgba(black, .1)
+  // background PRIMARY
+  border-bottom 1px solid #fafafa
+  // background #fcfcfc
+  background #fff
   z-index 100
   a, li > a
-    color WHITE
+    line-height 60px
+    color #333
     &:hover
-      color lighten(PRIMARY, 90%)
+      color #888
 
   li.active > a
     color WHITE
@@ -113,10 +118,10 @@ html, body
 
   > div
     padding-right 40px
-  
+
   p, address
     max-width 430px
-    
+
     color lighten(BLACK, 56%)
 
   // i
@@ -126,7 +131,7 @@ html, body
 
   //   margin-right 10px
   //   margin-bottom 80px
-    
+
   //   font-size 30px
   //   text-align center
   //   color PRIMARY
@@ -138,7 +143,7 @@ html, body
     // width 50px
     // margin-right 20px
     // margin-bottom 80px
-    
+
     // font-size 50px
     // text-align center
     color PRIMARY
@@ -146,7 +151,7 @@ html, body
 // mission
 .mission
   padding 30px 0 50px 0
-  
+
   color WHITE
 
   background PRIMARY
