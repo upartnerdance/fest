@@ -69,11 +69,17 @@ html, body
       background-color rgba(WHITE, .5)
 
   .navbar-toggle
-    border-color rgba(WHITE, .4)
+    border-color rgba(BLACK, .4)
+    // relative top 20px left 0
+    margin-top 20px
     &:hover
-      background-color rgba(WHITE, .2)
+      background-color rgba(BLACK, .2)
     .icon-bar
-      background-color rgba(WHITE, .6)
+      background-color rgba(BLACK, .6)
+
+  .navbar-brand
+    img
+      max-width 100%
 
 .navbar-static-top
   margin-bottom 0
@@ -116,29 +122,12 @@ html, body
 
     color lighten(BLACK, 56%)
 
-  // i
-  //   relative top 20px left 0
-  //   float left
-  //   width 30px
-
-  //   margin-right 10px
-  //   margin-bottom 80px
-
-  //   font-size 30px
-  //   text-align center
-  //   color PRIMARY
+.comp-meta i
+  color PRIMARY
 
 @media screen and (min-width: 400px)
-  .comp-meta i
-    // relative top 20px left 0
-    // float left
-    // width 50px
-    // margin-right 20px
-    // margin-bottom 80px
-
-    // font-size 50px
-    // text-align center
-    color PRIMARY
+  .navbar .navbar-brand
+    max-width 500px
 
 // mission
 .mission
@@ -195,9 +184,13 @@ html, body
 .sponsors
   background url(../img/mast.png) top center
   border-bottom 10px solid SECONDARY // #f3f3f3
-  padding-top 18px
+  padding-top 28px
+  h4
+    margin-bottom 30px
+
   img
     max-width 100%
+    margin-bottom 35px
 
 // for reference --------------------------------------
 .declaration-order
