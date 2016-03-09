@@ -1,5 +1,5 @@
 html,body{height:100%}
-.wrapper{min-height:70%;height:auto !important;margin-bottom:40px}
+.wrapper{height:auto !important;margin-bottom:40px}
 @media (min-width: 1200px){.container{max-width:940px}
 }.push{margin-bottom:20px}
 .btn-huge{padding:14px;font-size:18px}
