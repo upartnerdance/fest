@@ -1,6 +1,6 @@
 @import 'nib'
 
-PRIMARY = #BF0224
+PRIMARY = darken(lighten(#BF0224, 10%), 20%)
 SECONDARY = #00725D
 TERTIARY = #2A6DB2
 
@@ -25,7 +25,7 @@ html, body
 .wrapper
   // min-height 70%
   height auto !important
-  margin-bottom 40px
+  // margin-bottom 40px
 
 @media (min-width: 1200px)
   .container
@@ -54,8 +54,9 @@ html, body
   // background #fcfcfc
   background #fff
   z-index 100
+  min-height 30px
   a, li > a
-    line-height 66px
+    line-height 24px
     color #333
     &:hover
       color #888
@@ -78,8 +79,10 @@ html, body
       background-color rgba(BLACK, .6)
 
   .navbar-brand
+    padding 8px 15px
     img
       max-width 100%
+      height 36px
 
 .navbar-static-top
   margin-bottom 0
@@ -123,11 +126,27 @@ html, body
     color lighten(BLACK, 56%)
 
 .comp-meta i
-  color PRIMARY
+  color lighten(PRIMARY, 10%)
 
 @media screen and (min-width: 400px)
   .navbar .navbar-brand
     max-width 500px
+
+// big img
+.team-match-img
+  width 100%
+  height 600px
+  background url(../img/team-match-woo.jpg) no-repeat
+  background-size cover
+  background-position center
+  // background-attachment fixed
+.union-depot-img
+  width 100%
+  height 400px
+  background url(../img/union-depot.jpg) no-repeat
+  background-size cover
+  background-position bottom
+  background-attachment fixed
 
 // mission
 .mission
@@ -135,14 +154,14 @@ html, body
 
   color WHITE
 
-  background SECONDARY
+  background PRIMARY
 
-  text-shadow 0 -1.5px 0 rgba(black, .6)
+  text-shadow 0 -1px 0 rgba(black, .3)
   p
     letter-spacing .03em
     line-height 1.8
   a
-    color lighten(SECONDARY, 80%)
+    color lighten(PRIMARY, 80%)
   hr
     opacity .6
   ul
